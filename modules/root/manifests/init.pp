@@ -17,6 +17,6 @@ class root
       owner   => root,
       group   => root,
       source  => "puppet:///modules/zsh/etc/skel/.zshrc",
-      require => Package["zsh"];
+      require => Package["zsh"],
   }
 }
