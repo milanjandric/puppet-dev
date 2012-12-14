@@ -6,7 +6,7 @@ class root
   {
     "root":
       shell    => "/bin/zsh",
-      password => '$6$3LFHcTBT$ZFENIEd1ZdIVP64Ns5Ygnd..d2qWWA6EJ6dtiB/bAQfWtoDsZKFdRDuGMtP4//u',
+      password => '$6$GsF63lxN$mM/DSS9thaqQ4wX8eqyYkhKkjsXuSdWPe61RLPz/FkruIFVN3memNk4rVDYDLj/',
   }
 
   file
