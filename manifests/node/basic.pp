@@ -1,0 +1,4 @@
+node localhost {
+    include "mc"
+}
+
