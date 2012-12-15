@@ -1,6 +1,4 @@
 node default {
-    include "mc"
-    include "zsh"
-    include "root"
+    include "dev-basic"
 }
 
