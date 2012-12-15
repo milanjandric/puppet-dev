@@ -9,6 +9,6 @@ class shippingeasy-repo::common
       owner   => "www-data",
       group   => "www-data",
       mode    => "755",
-      require => Package["apache"],
+#      require => Package["apache"],
   }
 }
