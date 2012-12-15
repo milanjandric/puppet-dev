@@ -9,6 +9,7 @@ class dev-base
   include "tmux"
   include "zsh"
   include "wkhtmltopdf"
+  include "rubygems"
   include "compass"
   include "shippingeasy-repo"
 }
