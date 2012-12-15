@@ -7,7 +7,6 @@ class dev-base
   include "root"
   include "ssh"
   include "tmux"
-  include "vim"
   include "zsh"
   include "wkhtmltopdf"
   include "shippingeasy-repo"
