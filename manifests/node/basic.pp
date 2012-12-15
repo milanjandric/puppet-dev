@@ -1,4 +1,4 @@
 node default {
-    include "dev-basic"
+    include "dev-base"
 }
 
