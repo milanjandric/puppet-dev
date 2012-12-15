@@ -3,15 +3,15 @@ class shippingeasy-repo::www
   include "common"
 
   $webdir_full_path = "${common::web_path}"
-  $repo             = "ssh://shippingeasy@gerrit.saturized.com:29418/shippingeasy.git"
+  $repo             = "ssh://gerrit.saturized.com:29418/shippingeasy.git"
   $branch           = "master"
 
   exec
   {
     "git-clone-${webdir_full_path}":
       path    => ["/usr/bin", "/bin"],
-      command => "git clone -b ${branch} ${repo} ${webdir_full_path} && chown -R www-data:www-data ${webdir_full_path}",
-      creates => "${webdir_full_path}",
+      command => "git clone ${repo} ${webdir_full_path} && chown -R www-data:www-data ${webdir_full_path}",
+      creates => "${webdir_full_path}/.git",
       timeout => "-1",
       require =>
       [
