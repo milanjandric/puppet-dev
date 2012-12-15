@@ -16,7 +16,7 @@ class shippingeasy-repo::www
       require =>
       [
         File["/root/.ssh/id_dsa"],
-        Package["nginx"],
+#        Package["nginx"],
         Package["puppet"],
 	      Exec["install-compass-rgbapng"],
       ],
