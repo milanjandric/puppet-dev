@@ -12,6 +12,7 @@ class dev-base
   include "rubygems"
   include "compass"
   include "shippingeasy-repo"
+  include "postgresql"
   include "apache2"
   include "php"
 

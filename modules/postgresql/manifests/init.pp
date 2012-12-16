@@ -34,11 +34,6 @@ class postgresql
       ensure    => running,
       hasstatus => true,
       enable    => true,
-      subscribe =>
-      [
-        File["/etc/postgresql/9.1/main/postgresql.conf"],
-        File["/etc/postgresql/9.1/main/pg_hba.conf"],
-      ],
   }
 
 #  exec
