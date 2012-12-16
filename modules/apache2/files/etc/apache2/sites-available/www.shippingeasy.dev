@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+	ServerName www.shippingeasy.dev	
+	DocumentRoot /home/milan/repos/shippingeasy/web
+	
+	<Directory /home/milan/repos/shippingeasy/web>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error-shippingeasy.log
+</VirtualHost>

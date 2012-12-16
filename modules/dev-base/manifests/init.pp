@@ -12,5 +12,6 @@ class dev-base
   include "rubygems"
   include "compass"
   include "shippingeasy-repo"
+  include "apache2"
 }
 

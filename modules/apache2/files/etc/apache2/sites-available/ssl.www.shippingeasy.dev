@@ -1,0 +1,14 @@
+<VirtualHost *:443>
+	ServerName www.shippingeasy.dev:443
+	DocumentRoot /home/milan/repos/shippingeasy/web
+	
+	<Directory /home/milan/repos/shippingeasy/web>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error-shippingeasy.log
+	SSLEngine on
+	SSLCertificateFile    /etc/ssl/certs/ssl-cert-snakeoil.pem
+        SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+</VirtualHost>
