@@ -84,6 +84,13 @@ class apache2
             notify => Service["apache2"],
     }
 
+    host {
+        'www.shippingeasy.dev':
+            ensure => 'present',
+            target => '/etc/hosts',
+            ip => '127.0.0.1',
+    }
+
     service
     {
         "apache2":
