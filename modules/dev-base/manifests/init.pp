@@ -13,5 +13,8 @@ class dev-base
   include "compass"
   include "shippingeasy-repo"
   include "apache2"
+  include "php"
+
+  php::pear { ["cgi", "cli", "curl", "gd", "geoip", "mcrypt", "pgsql", "xsl"]: }
 }
 
