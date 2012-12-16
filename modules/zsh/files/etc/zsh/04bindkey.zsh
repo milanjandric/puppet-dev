@@ -21,8 +21,8 @@ case "$TERM"; in
         bindkey "^[[3^" delete-word
         ;;
     xterm)
-        bindkey "^[[H" beginning-of-line
-        bindkey "^[[F" end-of-line
+        bindkey "^[OH" beginning-of-line
+        bindkey "^[OF" end-of-line
         bindkey "^[[1;5C" shortword-forward-word
         bindkey "^[[1;5D" shortword-backward-word
         bindkey "^[[3;5~" shortword-delete-word
