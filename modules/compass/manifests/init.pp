@@ -13,7 +13,7 @@ class compass
   {
     "install-compass-rgbapng":
       command => "gem install compass-rgbapng",
-      creates => "/var/lib/gems/1.8/gems/compass-rgbapng-0.1.1/lib/rgbapng.rb",
+      creates => "/var/lib/gems/1.9.1/gems/compass-rgbapng-0.1.1/lib/rgbapng.rb",
       path    => ["/usr/bin"],
       require => Exec["install-compass"],
   }
