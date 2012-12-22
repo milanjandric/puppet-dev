@@ -6,6 +6,7 @@ class dev-base
   include "puppet-package"
   include "root"
   include "ssh"
+  include "git"
   include "tmux"
   include "zsh"
   include "wkhtmltopdf"
