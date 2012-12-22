@@ -6,20 +6,14 @@ class postgresql::server(
   $psql_port        = '5432'
   ) {
 
-  require postgresql::client
+    require postgresql::client
 
-  case $operatingsystem {
-    Ubuntu: {
-      class{'postgresql::server::install':
-        version           => $version,
-        listen_addresses  => $listen_addresses,
-        max_connections   => $max_connections,
-        shared_buffers    => $shared_buffers,
-        psql_port         => $psql_port
-      }
-    }
-    default: {
-      warning("PostgreSQL not configred for $operatingsystem")
+    class{'postgresql::server::install':
+      version           => $version,
+      listen_addresses  => $listen_addresses,
+      max_connections   => $max_connections,
+      shared_buffers    => $shared_buffers,
+      psql_port         => $psql_port
     }
   }
 }
