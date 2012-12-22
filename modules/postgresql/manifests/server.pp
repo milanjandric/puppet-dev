@@ -6,15 +6,15 @@ class postgresql::server(
   $psql_port        = '5432'
   ) {
 
-    require postgresql::client
+  require postgresql::client
 
-    postgresql::server::install{"install-server":
-      version           => $version,
-      listen_addresses  => $listen_addresses,
-      max_connections   => $max_connections,
-      shared_buffers    => $shared_buffers,
-      psql_port         => $psql_port
-    }
+  postgresql::server::install{"install-server":
+    version           => $version,
+    listen_addresses  => $listen_addresses,
+    max_connections   => $max_connections,
+    shared_buffers    => $shared_buffers,
+    psql_port         => $psql_port
   }
 }
+
 
