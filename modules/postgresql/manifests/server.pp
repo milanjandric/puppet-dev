@@ -8,7 +8,7 @@ class postgresql::server(
 
     require postgresql::client
 
-    class{'postgresql::server::install':
+    postgresql::server::install{"install-server":
       version           => $version,
       listen_addresses  => $listen_addresses,
       max_connections   => $max_connections,
