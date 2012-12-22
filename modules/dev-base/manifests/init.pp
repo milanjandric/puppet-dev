@@ -17,16 +17,6 @@ class dev-base
   include "php"
   include "postgresql"
 
-  postgresql::user{"dev":
-    ensure   => present,
-    password => "dev",
-  }
-
-  postgresql::database{"shippingeasy":
-    ensure   => present,
-    owner    => "dev",
-  }
-
   php::pear { ["cgi", "cli", "curl", "gd", "geoip", "mcrypt", "pgsql", "xsl"]: }
 }
 

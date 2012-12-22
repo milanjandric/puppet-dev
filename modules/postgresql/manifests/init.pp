@@ -5,4 +5,15 @@
 class postgresql {
   include postgresql::server
   include postgresql::client
+
+  postgresql::user{"dev":
+    ensure   => present,
+    password => "dev",
+  }
+
+  postgresql::database{"shippingeasy":
+    ensure   => present,
+    owner    => "dev",
+  }
+
 }
