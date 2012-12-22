@@ -66,5 +66,5 @@ class postgresql::server::install(
     notify  => Service['postgresql'],
   }
 
-}  
+}
 

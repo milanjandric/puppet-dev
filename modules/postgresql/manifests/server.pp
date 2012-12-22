@@ -9,7 +9,7 @@ class postgresql::server(
   require postgresql::client
 
   case $operatingsystem {
-    Ubuntu: {
+    Debian: {
       class{'postgresql::server::install':
         version           => $version,
         listen_addresses  => $listen_addresses,
